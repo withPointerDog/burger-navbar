@@ -1,6 +1,8 @@
-const links = document.querySelector(".links");
-const btn = document.querySelector(".nav-toggle");
+const navbar = document.querySelector(".links");
+const btns = document.querySelectorAll("button");
 
-btn.addEventListener("click", () => {
-  links.classList.toggle("show-links");
+btns.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    navbar.classList.toggle("show-links");
+  });
 });
